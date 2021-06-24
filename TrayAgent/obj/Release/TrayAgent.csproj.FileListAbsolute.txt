@@ -1,0 +1,47 @@
+D:\statistica\C\TrayAgent\TrayAgent\bin\Release\TrayAgent.exe.config
+D:\statistica\C\TrayAgent\TrayAgent\bin\Release\TrayAgent.exe
+D:\statistica\C\TrayAgent\TrayAgent\bin\Release\TrayAgent.pdb
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.Properties.Resources.resources
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.GenerateResource.Cache
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.exe
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.pdb
+D:\Statistica\C\TrayAgent\TrayAgent\bin\Release\ManagedClient.dll
+D:\Statistica\C\TrayAgent\TrayAgent\bin\Release\Antlr4.Runtime.net35.dll
+D:\Statistica\C\TrayAgent\TrayAgent\bin\Release\ManagedClient.pdb
+D:\Statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.Form1.resources
+V:\statistica\C\TrayAgent\TrayAgent\bin\Release\TrayAgent.exe.config
+V:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.exe
+V:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.pdb
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.ResolveComReference.cache
+E:\TRAYAGENT\TrayAgent\bin\Release\TrayAgent.exe.config
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.csproj.ResolveComReference.cache
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.exe
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.pdb
+E:\TRAYAGENT\TrayAgent\bin\Release\TrayAgent.exe
+E:\TRAYAGENT\TrayAgent\bin\Release\TrayAgent.pdb
+E:\TRAYAGENT\TrayAgent\bin\Release\Antlr4.Runtime.net35.dll
+E:\TRAYAGENT\TrayAgent\bin\Release\ManagedClient.pdb
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.csprojResolveAssemblyReference.cache
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.Form1.resources
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.Properties.Resources.resources
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.csproj.GenerateResource.Cache
+E:\TRAYAGENT\TrayAgent\obj\Release\TrayAgent.FormLogins.resources
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.FormLogins.resources
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.FormEKZ.resources
+D:\statistica\C\TrayAgent\TrayAgent\obj\Release\TrayAgent.csprojResolveAssemblyReference.cache
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\bin\Release\TrayAgent.exe.config
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\bin\Release\TrayAgent.exe
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\bin\Release\TrayAgent.pdb
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\bin\Release\Antlr4.Runtime.net35.dll
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\bin\Release\ManagedClient.pdb
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.csprojAssemblyReference.cache
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.ResolveComReference.cache
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.Form1.resources
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.FormEKZ.resources
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.FormLogins.resources
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.Properties.Resources.resources
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.GenerateResource.cache
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.CoreCompileInputs.cache
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.csproj.CopyComplete
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.exe
+C:\Users\79962\Downloads\Telegram Desktop\TrayAgent\TrayAgent\obj\Release\TrayAgent.pdb
