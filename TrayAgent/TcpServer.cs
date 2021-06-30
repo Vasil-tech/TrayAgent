@@ -5,8 +5,8 @@ using System.Text;
 
 namespace TrayAgent
 {
-    public struct TcpServer
-    {   //Структура данных тестируемого сервера
+    public struct TcpServer //Структура данных тестируемого сервера
+    {   
         public string host;
         public int port;
         public bool succ;

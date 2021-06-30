@@ -4,11 +4,7 @@ using System.Configuration;
 namespace TrayAgent
 {
     static class CM
-    {    /// <summary>
-        /// Простой доступ к настройкам из App.config
-        /// Миронов А. В.
-        /// </summary>
-
+    {   
         public static string GetString(string name, string defaultValue)
         {
             string result = ConfigurationManager.AppSettings[name];

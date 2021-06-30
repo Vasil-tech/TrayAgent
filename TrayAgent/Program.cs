@@ -14,7 +14,8 @@ namespace TrayAgent
 		[STAThread]
 		static void Main(string[] args)
 		{
-			#region Comment
+
+			#region Comment for parameters App.config
 			//  Все параметры в App.config
 			//      сигла
 			//       сигла адрес_сервера

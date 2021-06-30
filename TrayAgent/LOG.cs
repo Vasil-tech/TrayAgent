@@ -14,9 +14,7 @@ namespace TrayAgent
             string result = DateTime.Today.ToString("yyyyMMdd" + ".log");
             return result;
         }
-        /// <summary>
-        /// Пишем в лог. 
-        /// </summary>
+
         public static void DoAccessLog(string SInfo)
         {
             if (CNST.WRITELOG)
@@ -69,7 +67,6 @@ namespace TrayAgent
             {
                 DoAccessLog("\t"+ ex.Message);   
             }
-            using (SqlConnection con = new SqlConnection(cnStr));
         }
     }
 }

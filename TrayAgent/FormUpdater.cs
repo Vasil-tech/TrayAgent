@@ -4,6 +4,7 @@ using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 using System.Runtime.InteropServices; //Для использования DLLImport
+using System.Threading.Tasks;
 
 namespace TrayAgent
 {
@@ -13,15 +14,16 @@ namespace TrayAgent
 		public static string url_program = "http://libs.spb.ru/TrayAgent/TrayAgent.exe"; //Ссылка на exe-файл программы
 		public static string url_md5 = "http://libs.spb.ru/TrayAgent/TrayAgent.exe.md5"; //Ссылка на сайт
 
-		//public static string url_version = "http://libs.spb.ru/TrayAgentTest/version.txt";
-		//public static string url_program = "http://libs.spb.ru/TrayAgentTest/TrayAgent.exe";
-		//public static string url_md5 = "http://libs.spb.ru/TrayAgentTest/TrayAgent.exe.md5";
-
 		public static string my_filename;   // Имя файла запущенной программы 
 		public static string up_filename;  // Имя временного файла для загрузки обновления
 		public static bool is_skipped;   // Признак, что обновление не требуется или закончено
 
-		public static void Check(string[] keys)
+        //public static async Task CheckAsync(string[] keys)
+        //{
+        //    await Task.Run(() => Check(keys));
+        //}
+
+        public static void Check(string[] keys)
 		{
 			try
 			{
@@ -45,8 +47,16 @@ namespace TrayAgent
 						DoDeleteOldProgram(keys[1]);
 				}
 			}
-			catch (Exception ex) { MessageBox.Show("Check err " + ex.Message + " " + string.Concat(keys)); }
+			catch (Exception ex) 
+			{ 
+				MessageBox.Show("Check err " + ex.Message + " " + string.Concat(keys)); 
+			}
 		}
+
+		//static async Task<string> GetExecFilenameAsync()
+		//{
+		//	await Task.Run(() => GetExecFilename());
+		//}
 
 		public static string GetExecFilename()
 		{
@@ -57,6 +67,11 @@ namespace TrayAgent
 			else
 				return "";
 		}
+
+		//static async Task DoCheckUpdateAsync(string[] keys)
+		//{
+		//	await Task.Run(() => DoCheckUpdate(keys));
+		//}
 
 		public static void DoCheckUpdate(string[] keys)
 		{
@@ -80,6 +95,11 @@ namespace TrayAgent
 				return CNST.my_version;  // то программу даже и не будем пытаться.
 			}
 		}
+
+		//static async Task DownloadFileAsync(string[] keys)
+		//{
+		//	await Task.Run(() => DownloadFile(keys));
+		//}
 
 		public static void DownloadFile(string[] keys)
 		{
@@ -118,7 +138,12 @@ namespace TrayAgent
 			}
 		}
 
-		public static void RunProgram(string filename, string keys)
+        //static async Task RunProgramAsync(string filename, string keys)
+        //{
+        //    await Task.Run(() => RunProgram(filename, keys));
+        //}
+
+        public static void RunProgram(string filename, string keys)
 		{
 			try
 			{   
@@ -133,6 +158,11 @@ namespace TrayAgent
 				MessageBox.Show("run_program" + ex.Message + " " + filename);
 			}
 		}
+
+		//static async Task DoCopyDownloadedProgramAsync(string filename, string[] keys)
+		//{
+		//	await Task.Run(() => DoCopyDownloadedProgram(filename, keys));
+		//}
 
 		public static void DoCopyDownloadedProgram(string filename, string[] keys)
 		{
@@ -162,6 +192,11 @@ namespace TrayAgent
 					Thread.Sleep(200); // Небольшая задержка
 				}
 		}
+
+		//static async Task DoDeleteOldProgramAsync(string filename)
+		//{
+		//	await Task.Run(() => DoDeleteOldProgram(filename));
+		//}
 
 		public static void DoDeleteOldProgram(string filename)
 		{

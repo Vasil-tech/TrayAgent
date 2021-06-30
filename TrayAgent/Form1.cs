@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices; //Для использования DLLImport
 using System.Data.SqlClient; //Библиотека для работы с MS SQL-сервером
 using ManagedClient; //Библиотека Миронова А. для ИРБИС64
+using System.Threading.Tasks;
 
 namespace TrayAgent
 {
@@ -200,7 +201,7 @@ namespace TrayAgent
 			notifyIcon1.ContextMenu = new ContextMenu(
 				new[]
 					{   
-						new MenuItem("Прием",(s,e) => this.EKZ50_Click()),
+						new MenuItem("Прием",(s,e) => EKZ50_Click()),
 						new MenuItem("Показать", (s, e) => this.FormShow()),
 						new MenuItem("Выход", (s, e) => this.EXIT_APP()),
 					}
@@ -275,7 +276,7 @@ namespace TrayAgent
 			for (int k = 0; k < CNST.NS; k++)
 				SetText(k, H[k]);    
 		}
-
+		
 		private void timer1_Tick(object sender, EventArgs e)
 		{
 			//Мониторинг временно выключен для удобства пользователя
@@ -294,7 +295,7 @@ namespace TrayAgent
 			
 			#region Проверка доступности
 
-			TESTSERVERS.RUN(CNST.servers, out CNST.servers);
+			TESTSERVERS.RunAsync(CNST.servers, CNST.servers);
 					  
 
 			scSQL = 0;
@@ -584,14 +585,18 @@ namespace TrayAgent
 		//РАСШИРЕНИЕ ВОЗМОЖНОСТЕЙ ПРИЛОЖЕНИЯ
 		//Смена статусов экземпляров с 5 на 0 при вводе инвентарного номера/метки
 
-		private void EKZ50_Click()
+		//static async Task EKZ50_Click_Async()
+		//{
+		//	await Task.Run(() => EKZ50_Click());
+		//}
+
+		private static void EKZ50_Click()
 		{ //Открытие формы авторизации пользователя
 			Form frm2 = new FormLogins();
 			frm2.Show();
 		}
 
 		void notifyIcon1_Click(object sender, EventArgs e) { }
-
 
 		//void notifyIcon1_BalloonTipClicked(object sender, EventArgs e) { }
 
@@ -600,7 +605,7 @@ namespace TrayAgent
 			if (!EXIT)
 			{
 				e.Cancel = true; //Отменяем закрытие формы при нажатии на крест
-				this.Hide();
+				Hide();
 			}
 			else
 				Application.Exit();
@@ -613,9 +618,9 @@ namespace TrayAgent
 
 		void FormShow()
 		{
-			this.Show();
-			this.WindowState = FormWindowState.Normal;
-			this.textBox0.Select();
+			Show();
+			WindowState = FormWindowState.Normal;
+			textBox0.Select();
 		}
 
 		//Работа с Notification
@@ -653,8 +658,7 @@ namespace TrayAgent
 			notifyIcon1.ShowBalloonTip(tm);        
 		}
 
-		//Работа с сообщениями
-	
+		//Работа с Message
 		public void ShowMessage(int tip, string txt)
 		{
 			//Показ всплывающего сообщения
